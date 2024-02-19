@@ -1,3 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background-color: #756AB6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #271c68;
+}
+
+.top-container,
+.bot-container{
+    background-color: #E0AED0;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 35rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+
+    .shield{
+        font-size: 3rem;
+        color: #756AB6;
+    }
+
+    span{
+        font-size: .75rem;
+        opacity: .75;
+    }
+}
+
+.email-container{
+    display: flex;
+    justify-content: space-between;
+
+    span:nth-child(2){
+        font-size: .75rem;
+        padding: 3px 10px;
+        background-color: #AC87C5;
+        border-radius: 5px;
+    }
+}
+
+.border-bottom{
+    border-bottom: 1px solid #AC87C5;
+    padding-bottom: 1rem;
+}
+
+.add-email{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    button{
+        border-radius: 50%;
+        border: 1px solid #756AB6;
+        background-color: #E0AED0;
+        color: #271c68;
+        aspect-ratio: 1;
+        font-size: 1.5rem;
+        height: 2rem;
+        text-align: center;
+        padding-top: 2px;
+        transition: all 500ms ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            scale: 1.05;
+            background-color: #756AB6;
+            color: #E0AED0;
+            border: 1px solid #271c68;
+        }
+    }
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.phone{
+    font-size: 4rem;
+}
+
+.no-phone{
+    align-self: center;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+    background-image: repeating-linear-gradient(-45deg, #756ab644, #c9a7eba8 2.5%, #e0aed094 7.5% );
+
+    span{
+        width:75%;
+        font-size: .85rem;
+        font-weight: 500;
+    }
 }

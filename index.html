@@ -3,61 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Account Settings</title>
 </head>
 <body>
+
     <div class="top-container">
+
         <div class="header-container">
-            <ion-icon name="shield-checkmark"></ion-icon>
+            <ion-icon class='shield' name="shield-checkmark"></ion-icon>
             <div class="text-container">
                 <h2>Login and security</h2>
                 <span>Add or remove email addresses on your account.</span>
             </div>
-            <b>Email addresses</b>
-            <div class="email-container">
-                <span>johnjohnson@email.com</span>
-                <span>PRIMARY</span>
+        </div>
+
+        <b>Email adresses</b>
+            
+        <div class="email-container border-bottom">
+            <span>johnjohnson@email.com</span>
+            <span>PRIMARY</span>
+        </div>
+
+        <div class="email-container">
+            <span>johnsoncompany@email.com</span>
+            <span>. . .</span>
+        </div>
+
+        <div class="add-email">
+            <button><ion-icon name="add"></ion-icon></button>
+            <span>Add email address</span>
+         </div>
+
+    </div>
+
+        <div class="bot-container">
+            <div class="header-container">
+                <ion-icon class='phone'name="phone-portrait"></ion-icon>
+                <div class="text-container">
+                    <h2>Phone Numbers</h2>
+                    <span>Add a phone number in case you have trouble signing in.</span>
+                </div>
             </div>
-            <div class="email-container">
-                <span>johnsoncompany@email.com</span>
-                <span>. . .</span>
+
+            <div class="no-phone">
+                <b>You haven't added any phone numbers yet.</b>
+                <span> Your phone number helps us keep your account secure. It also
+                    helps people who already have your number discover and connect with you.
+                </span>
             </div>
+
             <div class="add-email">
                 <button><ion-icon name="add"></ion-icon></button>
                 <span>Add email address</span>
             </div>
         </div>
-
-        <div class="bot-container">
-            <div class="header-container">
-                <ion-icon name="phone-portrait"></ion-icon>
-                <div class="text-container">
-                    <h2>Phone Numbers</h2>
-                    <span>Add a phone number in case you have trouble signing in.</span>
-                </div>
-
-                <div class="no-phone">
-                    <b>You haven't added any phone numbers yet.</b>
-                    <span> Your phone number helps us keep your account secure. It also
-                        helps people who already have your number discover and connect with you.
-                    </span>
-                </div>
-
-                <div class="add-email">
-                    <button><ion-icon name="add"></ion-icon></button>
-                    <span>Add email address</span>
-                </div>
-
-
-        </div>
-    </div>
-
-    <div class="bot-container">
-
-    </div>
-
-
+    
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
